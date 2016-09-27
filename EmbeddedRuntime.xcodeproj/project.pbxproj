@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9894A911D9ADCAD00D49D48 /* NativeScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9894A901D9ADCAD00D49D48 /* NativeScript.framework */; };
+		C9894A921D9ADCAD00D49D48 /* NativeScript.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9894A901D9ADCAD00D49D48 /* NativeScript.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E5C915BC1C3AA1D3005D77B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C915BB1C3AA1D3005D77B8 /* main.m */; };
 		E5C915BF1C3AA1D3005D77B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C915BE1C3AA1D3005D77B8 /* AppDelegate.m */; };
 		E5C915C21C3AA1D3005D77B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C915C11C3AA1D3005D77B8 /* ViewController.m */; };
 		E5C915C51C3AA1D3005D77B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C915C31C3AA1D3005D77B8 /* Main.storyboard */; };
 		E5C915C71C3AA1D3005D77B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C915C61C3AA1D3005D77B8 /* Assets.xcassets */; };
 		E5C915CA1C3AA1D3005D77B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C915C81C3AA1D3005D77B8 /* LaunchScreen.storyboard */; };
-		E5C915D21C3AA290005D77B8 /* NativeScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C915D11C3AA290005D77B8 /* NativeScript.framework */; };
-		E5C915D31C3AA290005D77B8 /* NativeScript.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5C915D11C3AA290005D77B8 /* NativeScript.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E5C915D41C3AA290005D77B8 /* Embed Frameworks */ = {
+		C9894A931D9ADCAD00D49D48 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E5C915D31C3AA290005D77B8 /* NativeScript.framework in Embed Frameworks */,
+				C9894A921D9ADCAD00D49D48 /* NativeScript.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C9894A901D9ADCAD00D49D48 /* NativeScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NativeScript.framework; path = "node_modules/tns-ios/framework/internal/NativeScript.framework"; sourceTree = "<group>"; };
 		E5C915B71C3AA1D3005D77B8 /* EmbeddedRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmbeddedRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C915BB1C3AA1D3005D77B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E5C915BD1C3AA1D3005D77B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		E5C915C61C3AA1D3005D77B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5C915C91C3AA1D3005D77B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5C915CB1C3AA1D3005D77B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5C915D11C3AA290005D77B8 /* NativeScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NativeScript.framework; path = "node_modules/tns-ios/framework/internal/NativeScript/Frameworks/NativeScript.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5C915D21C3AA290005D77B8 /* NativeScript.framework in Frameworks */,
+				C9894A911D9ADCAD00D49D48 /* NativeScript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,7 @@
 		E5C915AE1C3AA1D3005D77B8 = {
 			isa = PBXGroup;
 			children = (
-				E5C915D11C3AA290005D77B8 /* NativeScript.framework */,
+				C9894A901D9ADCAD00D49D48 /* NativeScript.framework */,
 				E5C915B91C3AA1D3005D77B8 /* EmbeddedRuntime */,
 				E5C915B81C3AA1D3005D77B8 /* Products */,
 			);
@@ -109,7 +109,7 @@
 				E5C915B31C3AA1D3005D77B8 /* Sources */,
 				E5C915B41C3AA1D3005D77B8 /* Frameworks */,
 				E5C915B51C3AA1D3005D77B8 /* Resources */,
-				E5C915D41C3AA290005D77B8 /* Embed Frameworks */,
+				C9894A931D9ADCAD00D49D48 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/node_modules/tns-ios/framework/internal/NativeScript/Frameworks",
+					"$(PROJECT_DIR)/node_modules/tns-ios/framework/internal",
 				);
 				INFOPLIST_FILE = EmbeddedRuntime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -326,7 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/node_modules/tns-ios/framework/internal/NativeScript/Frameworks",
+					"$(PROJECT_DIR)/node_modules/tns-ios/framework/internal",
 				);
 				INFOPLIST_FILE = EmbeddedRuntime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
