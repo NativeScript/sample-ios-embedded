@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040D38A11F8CA8AB00644DEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D38A01F8CA8AB00644DEA /* AppDelegate.m */; };
+		040D38A41F8CA8AB00644DEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D38A31F8CA8AB00644DEA /* ViewController.m */; };
+		040D38A71F8CA8AB00644DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040D38A51F8CA8AB00644DEA /* Main.storyboard */; };
+		040D38A91F8CA8AB00644DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040D38A81F8CA8AB00644DEA /* Assets.xcassets */; };
+		040D38AC1F8CA8AB00644DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040D38AA1F8CA8AB00644DEA /* LaunchScreen.storyboard */; };
+		040D38AF1F8CA8AB00644DEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D38AE1F8CA8AB00644DEA /* main.m */; };
+		040D38B61F8CB43800644DEA /* app in Resources */ = {isa = PBXBuildFile; fileRef = 040D38B51F8CB43800644DEA /* app */; };
+		040D38B91F8CB84D00644DEA /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040D38B81F8CB84D00644DEA /* TNSWidgets.framework */; };
+		040D38BB1F8CB8EA00644DEA /* NativeScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040D38BA1F8CB8E900644DEA /* NativeScript.framework */; };
+		040D38BE1F8CBAFF00644DEA /* NativeScript.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 040D38BA1F8CB8E900644DEA /* NativeScript.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		040D38BF1F8CBB0400644DEA /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 040D38B81F8CB84D00644DEA /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFA19F5481B50A881A42CD73 /* Pods_CoolApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553CE055441751191B8D0863 /* Pods_CoolApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		040D38BD1F8CB9B600644DEA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				040D38BF1F8CBB0400644DEA /* TNSWidgets.framework in Embed Frameworks */,
+				040D38BE1F8CBAFF00644DEA /* NativeScript.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		040D389C1F8CA8AB00644DEA /* CoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040D389F1F8CA8AB00644DEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		040D38A01F8CA8AB00644DEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		040D38A21F8CA8AB00644DEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		040D38A31F8CA8AB00644DEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		040D38A61F8CA8AB00644DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		040D38A81F8CA8AB00644DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		040D38AB1F8CA8AB00644DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		040D38AD1F8CA8AB00644DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040D38AE1F8CA8AB00644DEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		040D38B51F8CB43800644DEA /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; name = app; path = ../../nsapp/platforms/ios/nsapp/app; sourceTree = "<group>"; };
+		040D38B81F8CB84D00644DEA /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "../nsapp/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		040D38BA1F8CB8E900644DEA /* NativeScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NativeScript.framework; path = ../nsapp/platforms/ios/internal/NativeScript.framework; sourceTree = "<group>"; };
+		553CE055441751191B8D0863 /* Pods_CoolApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77FC8B2111566679B1B8699F /* Pods-CoolApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolApp/Pods-CoolApp.debug.xcconfig"; sourceTree = "<group>"; };
+		809CED86F5631804511288F5 /* Pods-CoolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolApp/Pods-CoolApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040D38991F8CA8AB00644DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040D38BB1F8CB8EA00644DEA /* NativeScript.framework in Frameworks */,
+				040D38B91F8CB84D00644DEA /* TNSWidgets.framework in Frameworks */,
+				DFA19F5481B50A881A42CD73 /* Pods_CoolApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040D38931F8CA8AB00644DEA = {
+			isa = PBXGroup;
+			children = (
+				040D389E1F8CA8AB00644DEA /* CoolApp */,
+				040D389D1F8CA8AB00644DEA /* Products */,
+				040D38B71F8CB84C00644DEA /* Frameworks */,
+				753ECCDB69C315C4C3EE45A9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		040D389D1F8CA8AB00644DEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				040D389C1F8CA8AB00644DEA /* CoolApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		040D389E1F8CA8AB00644DEA /* CoolApp */ = {
+			isa = PBXGroup;
+			children = (
+				040D38B51F8CB43800644DEA /* app */,
+				040D389F1F8CA8AB00644DEA /* AppDelegate.h */,
+				040D38A01F8CA8AB00644DEA /* AppDelegate.m */,
+				040D38A21F8CA8AB00644DEA /* ViewController.h */,
+				040D38A31F8CA8AB00644DEA /* ViewController.m */,
+				040D38A51F8CA8AB00644DEA /* Main.storyboard */,
+				040D38A81F8CA8AB00644DEA /* Assets.xcassets */,
+				040D38AA1F8CA8AB00644DEA /* LaunchScreen.storyboard */,
+				040D38AD1F8CA8AB00644DEA /* Info.plist */,
+				040D38AE1F8CA8AB00644DEA /* main.m */,
+			);
+			path = CoolApp;
+			sourceTree = "<group>";
+		};
+		040D38B71F8CB84C00644DEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				040D38BA1F8CB8E900644DEA /* NativeScript.framework */,
+				040D38B81F8CB84D00644DEA /* TNSWidgets.framework */,
+				553CE055441751191B8D0863 /* Pods_CoolApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		753ECCDB69C315C4C3EE45A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77FC8B2111566679B1B8699F /* Pods-CoolApp.debug.xcconfig */,
+				809CED86F5631804511288F5 /* Pods-CoolApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		040D389B1F8CA8AB00644DEA /* CoolApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040D38B21F8CA8AB00644DEA /* Build configuration list for PBXNativeTarget "CoolApp" */;
+			buildPhases = (
+				8ECE7AE9C4C70FA04AAA58B7 /* [CP] Check Pods Manifest.lock */,
+				040D38C01F8CBC7800644DEA /* Create NativeScript Metadata */,
+				040D38981F8CA8AB00644DEA /* Sources */,
+				040D38991F8CA8AB00644DEA /* Frameworks */,
+				040D389A1F8CA8AB00644DEA /* Resources */,
+				040D38BD1F8CB9B600644DEA /* Embed Frameworks */,
+				4DF0D14433286C7BD117FF25 /* [CP] Embed Pods Frameworks */,
+				B887307157A3BAE54EA2B609 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoolApp;
+			productName = CoolApp;
+			productReference = 040D389C1F8CA8AB00644DEA /* CoolApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		040D38941F8CA8AB00644DEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Master Technology";
+				TargetAttributes = {
+					040D389B1F8CA8AB00644DEA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 040D38971F8CA8AB00644DEA /* Build configuration list for PBXProject "CoolApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 040D38931F8CA8AB00644DEA;
+			productRefGroup = 040D389D1F8CA8AB00644DEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				040D389B1F8CA8AB00644DEA /* CoolApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040D389A1F8CA8AB00644DEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040D38B61F8CB43800644DEA /* app in Resources */,
+				040D38AC1F8CA8AB00644DEA /* LaunchScreen.storyboard in Resources */,
+				040D38A91F8CA8AB00644DEA /* Assets.xcassets in Resources */,
+				040D38A71F8CA8AB00644DEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		040D38C01F8CBC7800644DEA /* Create NativeScript Metadata */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create NativeScript Metadata";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$PROJECT_DIR/internal/metadata-generator/bin\" && ./build-step-metadata-generator.py";
+			showEnvVarsInLog = 0;
+		};
+		4DF0D14433286C7BD117FF25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoolApp/Pods-CoolApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SignatureView/SignatureView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SignatureView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoolApp/Pods-CoolApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ECE7AE9C4C70FA04AAA58B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoolApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B887307157A3BAE54EA2B609 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoolApp/Pods-CoolApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		040D38981F8CA8AB00644DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040D38A41F8CA8AB00644DEA /* ViewController.m in Sources */,
+				040D38AF1F8CA8AB00644DEA /* main.m in Sources */,
+				040D38A11F8CA8AB00644DEA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		040D38A51F8CA8AB00644DEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040D38A61F8CA8AB00644DEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		040D38AA1F8CA8AB00644DEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040D38AB1F8CA8AB00644DEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		040D38B01F8CA8AB00644DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		040D38B11F8CA8AB00644DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		040D38B31F8CA8AB00644DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77FC8B2111566679B1B8699F /* Pods-CoolApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8SB74D2F3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/internal",
+					"$(inherited)",
+					"$(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules-widgets/platforms/ios",
+				);
+				INFOPLIST_FILE = CoolApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-sectcreate",
+					__DATA,
+					__TNSMetadata,
+					"\"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\"",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mastertechapps.CoolApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		040D38B41F8CA8AB00644DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 809CED86F5631804511288F5 /* Pods-CoolApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8SB74D2F3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/internal",
+					"$(inherited)",
+					"$(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules-widgets/platforms/ios",
+				);
+				INFOPLIST_FILE = CoolApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-sectcreate",
+					__DATA,
+					__TNSMetadata,
+					"\"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\"",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mastertechapps.CoolApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		040D38971F8CA8AB00644DEA /* Build configuration list for PBXProject "CoolApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040D38B01F8CA8AB00644DEA /* Debug */,
+				040D38B11F8CA8AB00644DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040D38B21F8CA8AB00644DEA /* Build configuration list for PBXNativeTarget "CoolApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040D38B31F8CA8AB00644DEA /* Debug */,
+				040D38B41F8CA8AB00644DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 040D38941F8CA8AB00644DEA /* Project object */;
+}
