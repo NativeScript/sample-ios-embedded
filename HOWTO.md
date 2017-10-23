@@ -139,7 +139,7 @@ Awesome, we are now done with all the setup. The application should compile with
 
 ## Code Editing
 
-Now how do you actually make it do something? For that question, we need to go into the editor.
+> The exact steps you'll need to take in the next few sections will depend on your specific application. This article will use the sample *CoolApp* project [in this repository](https://github.com/NativeScript/sample-ios-embedded) to demonstrate the steps.
 
 In our sample *CoolApp*, we have the default **AppDelegate.h** &amp; **AppDelegate.m**. We don't need to change anything in these files.    We also have a **ViewController.m** and **ViewController.h**. For this example; I added
 
