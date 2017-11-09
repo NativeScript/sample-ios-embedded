@@ -2,8 +2,8 @@
 //  main.m
 //  CoolApp
 //
-//  Created by NathanaelA on 10/10/17.
-//  Copyright © 2017 nStudio, LLC. All rights reserved.
+//  Created by Yavor Georgiev on 4.01.16 г..
+//  Copyright © 2016 г. NativeScript. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
