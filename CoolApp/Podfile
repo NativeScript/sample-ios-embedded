@@ -1,0 +1,8 @@
+use_frameworks!
+
+target “CoolApp” do
+# Begin Podfile - /Users/mac/Source/ExistingApp/nsapp/node_modules/nativescript-drawingpad/platforms/ios/Podfile 
+ pod 'SignatureView', :git => 'https://github.com/PeterStaev/SignatureView.git', :branch => 'svg-support' 
+ # End Podfile 
+
+end
