@@ -137,7 +137,6 @@
 				040D389A1F8CA8AB00644DEA /* Resources */,
 				040D38BD1F8CB9B600644DEA /* Embed Frameworks */,
 				4DF0D14433286C7BD117FF25 /* [CP] Embed Pods Frameworks */,
-				B887307157A3BAE54EA2B609 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,21 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B887307157A3BAE54EA2B609 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoolApp/Pods-CoolApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -417,13 +401,7 @@
 				);
 				INFOPLIST_FILE = CoolApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = (
-					"-sectcreate",
-					__DATA,
-					__TNSMetadata,
-					"\"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\"",
-					"$(inherited)",
-				);
+				"OTHER_LDFLAGS[arch=*]" = "-sectcreate __DATA __TNSMetadata \"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\" $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mastertechapps.CoolApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,13 +424,7 @@
 				);
 				INFOPLIST_FILE = CoolApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = (
-					"-sectcreate",
-					__DATA,
-					__TNSMetadata,
-					"\"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\"",
-					"$(inherited)",
-				);
+				"OTHER_LDFLAGS[arch=*]" = "-sectcreate __DATA __TNSMetadata \"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\" $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mastertechapps.CoolApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
