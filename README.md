@@ -12,9 +12,6 @@ Now there are a couple things you need to do before you can run it.  We assume y
 - `tns install && tns build ios`
 - `cd ../CoolApp`
 - `pod install`
-- `cd ..`
-- Create a symlink from the **nsapp/platforms/ios/internal** to **CoolApp/internal**
-  - `ln -s $(PWD)/nsapp/platforms/ios/internal $(PWD)/CoolApp/internal`
 
 You should now be able to open the `CoolApp/CoolApp.xcworkspace` up in **XCode** and then run the application on a simulator or device.
 
