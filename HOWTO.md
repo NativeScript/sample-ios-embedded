@@ -64,12 +64,12 @@ So it should look like this:
 Next scroll down (or type in the filter) to the `Framework Search Paths`. And then open it up and add this to both Release and Debug Branches.
 
 ```
-$(inherited) ($PROJECT_DIR) ($PROJECT_DIR)/internal $(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules-widgets/platforms/ios
+$(inherited) $(PROJECT_DIR) $(PROJECT_DIR)/internal $(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules-widgets/platforms/ios
 ```
 
  ![docs/xcode_14.PNG](docs/xcode_14.png)
 
-The first two you may already have, but the others are important: `($PROJECT_DIR)/internal` as this points to that **Internal** folder that we copied, and it contains **NativeScript.framework**, so we need to make sure Xcode can find it. The last one links to where your *nsapp* is located and goes to where the widgets framework is locate: `/nsapp/node\_modules/tns-core-modules-widgets/platform/ios`
+The first two you may already have, but the others are important: `$(PROJECT_DIR)/internal` as this points to that **Internal** folder that we copied, and it contains **NativeScript.framework**, so we need to make sure Xcode can find it. The last one links to where your *nsapp* is located and goes to where the widgets framework is locate: `/nsapp/node\_modules/tns-core-modules-widgets/platform/ios`
 
 Finally you need to scroll down to find **Enable Bitcode** , or type Bitcode in the search, and then set it to **No**.
 
