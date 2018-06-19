@@ -15,7 +15,7 @@ Now there are a couple things you need to do before you can run it.  We assume y
 
 You should now be able to open the `CoolApp/CoolApp.xcworkspace` up in **XCode** and then run the application on a simulator or device.
 
-##Embedding NativeScript in your own project
+## Embedding NativeScript in your own project
 
 For very detailed documentation on the entire process, which walks you through all the steps to make this process work; please read the [HOWTO.md](HOWTO.md) file.
 
