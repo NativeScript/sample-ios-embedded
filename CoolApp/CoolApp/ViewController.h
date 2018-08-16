@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NativeScriptEmbedder.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <NativeScriptEmbedderDelegate>
 
 - (IBAction)activateNativeScript:(id)sender;
 

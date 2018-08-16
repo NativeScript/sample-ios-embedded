@@ -6,12 +6,12 @@
 	"nativescript": {
 		"id": "org.nativescript.nsapp",
 		"tns-ios": {
-			"version": "4.1.0"
+			"version": "4.2.0"
 		}
 	},
 	"dependencies": {
 		"nativescript-drawingpad": "^3.0.3",
 		"nativescript-theme-core": "~1.0.4",
-		"tns-core-modules": "^4.1.0"
+		"tns-core-modules": "^4.2.0"
 	}
 }

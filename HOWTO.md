@@ -343,11 +343,47 @@ From inside NativeScript the code looks like this:
    }
 ```
 
-## Potential Gotchas and Issues
+## The NativeScriptEmbedderDelegate protocol
+NativeScript 4.2.0 gives embedders more control over the NativeScript application using the *NativeScriptEmbedder* class and the *NativeScriptEmbedderDelegate* protocol. In order to take advantage of them you need to do few additional steps:
 
-1. The embedded NativeScript view is currently full screen; there is no easy way to currently embed it as a sub-view of your view.  To embed it as a sub-view would require you to modify the application.js, page.js, and frame.js classes inside NativeScript.  Not something that would be quick and easy.  It is possible, but would take a bit of work.
+1. Add *tns-core-modules* **src** folder to your **Header Search Paths**:
 
-2. NativeScript has a **"launch"** event which you can use. This event does NOT work in embedded mode. As a side effect of this event not working in embedded mode, the standard global **&quot;app.css&quot;** is never loaded. This css file is used for all your common css. For you to have a common **.css** file; I recommend you add the following line to each of your screen's css file **@import 'app.css';** this will cause your screen to load the global app.css file when it is loaded. There are other ways around this; but this is the simplest method to retain the use of a common css file.
+```
+$(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules/platforms/ios/src
+```
+2. Add  **NativeScriptEmbedder.m** file to **Compile Sources**(*Build Phases -> Compile Sources*)
+
+ ![docs/nativescript_embedder.PNG](docs/nativescript_embedder.PNG)
+ 
+3. Update the class you want to get a reference to the NativeScript app *rootViewController* to conform to the **NativeScriptEmbedderDelegate** protocol. For example:
+
+```
+@interface ViewController () <NativeScriptEmbedderDelegate>
+
+@end
+```
+
+4. Register the delegate (e.g. in **viewDidLoad**):
+
+```
+[NativeScriptEmbedder sharedInstance].delegate = self;
+```
+
+5. Implement **NativeScriptEmbedderDelegate** protocol's **presentNativeScriptApp:** method:
+
+```
+- (id)presentNativeScriptApp: (UIViewController*) vc {
+    [self addChildViewController:vc];
+    [vc.view setFrame:_containerView.bounds];
+    [_containerView addSubview:vc.view];
+    [vc didMoveToParentViewController:self];
+    return 0;
+}
+```
+Here **_containerView** is the view we want to add our NativeScript app to and **vc** is the embedded app's *rootViewController*.
+
+>Note that **presentNativeScriptApp:** method returns **0**. This is required due to a limitation in the current runtime's logic.
+
 
 ## Go Forth and Embed!
 

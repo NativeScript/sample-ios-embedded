@@ -22,6 +22,8 @@
     [super viewDidLoad];
     counter=0;
     [self _initializeRuntime];
+    
+    [NativeScriptEmbedder sharedInstance].delegate = self;
 }
 
 - (void)_initializeRuntime {
@@ -168,6 +170,11 @@
     }
     
     
+}
+
+- (id)presentNativeScriptApp: (UIViewController*) vc {
+    [self presentViewController:vc animated:YES completion:NULL];
+    return 0;
 }
 
 @end
