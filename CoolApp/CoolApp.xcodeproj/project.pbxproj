@@ -18,6 +18,7 @@
 		040D38BB1F8CB8EA00644DEA /* NativeScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040D38BA1F8CB8E900644DEA /* NativeScript.framework */; };
 		040D38BE1F8CBAFF00644DEA /* NativeScript.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 040D38BA1F8CB8E900644DEA /* NativeScript.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		040D38BF1F8CBB0400644DEA /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 040D38B81F8CB84D00644DEA /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9306F9B6212569F3009778A5 /* NativeScriptEmbedder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9306F9B5212569F3009778A5 /* NativeScriptEmbedder.m */; };
 		DFA19F5481B50A881A42CD73 /* Pods_CoolApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553CE055441751191B8D0863 /* Pods_CoolApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		553CE055441751191B8D0863 /* Pods_CoolApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FC8B2111566679B1B8699F /* Pods-CoolApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolApp/Pods-CoolApp.debug.xcconfig"; sourceTree = "<group>"; };
 		809CED86F5631804511288F5 /* Pods-CoolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolApp/Pods-CoolApp.release.xcconfig"; sourceTree = "<group>"; };
+		9306F9B5212569F3009778A5 /* NativeScriptEmbedder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NativeScriptEmbedder.m; path = "../nsapp/node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		040D38931F8CA8AB00644DEA = {
 			isa = PBXGroup;
 			children = (
+				9306F9B5212569F3009778A5 /* NativeScriptEmbedder.m */,
 				040D389E1F8CA8AB00644DEA /* CoolApp */,
 				040D389D1F8CA8AB00644DEA /* Products */,
 				040D38B71F8CB84C00644DEA /* Frameworks */,
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9306F9B6212569F3009778A5 /* NativeScriptEmbedder.m in Sources */,
 				040D38A41F8CA8AB00644DEA /* ViewController.m in Sources */,
 				040D38AF1F8CA8AB00644DEA /* main.m in Sources */,
 				040D38A11F8CA8AB00644DEA /* AppDelegate.m in Sources */,
@@ -399,9 +403,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules-widgets/platforms/ios",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules/platforms/ios/src";
 				INFOPLIST_FILE = CoolApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = "-sectcreate __DATA __TNSMetadata \"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\" $(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-sectcreate",
+					__DATA,
+					__TNSMetadata,
+					"\"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\"",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mastertechapps.CoolApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,9 +433,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules-widgets/platforms/ios",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules/platforms/ios/src";
 				INFOPLIST_FILE = CoolApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = "-sectcreate __DATA __TNSMetadata \"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\" $(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-sectcreate",
+					__DATA,
+					__TNSMetadata,
+					"\"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin\"",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mastertechapps.CoolApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
