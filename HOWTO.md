@@ -363,7 +363,13 @@ $(PROJECT_DIR)/../nsapp/node_modules/tns-core-modules/platforms/ios/src
 @end
 ```
 
-4. Implement **NativeScriptEmbedderDelegate** protocol's **presentNativeScriptApp:** method:
+4. Register the delegate (e.g. in **viewDidLoad**):
+
+```
+[NativeScriptEmbedder sharedInstance].delegate = self;
+```
+
+5. Implement **NativeScriptEmbedderDelegate** protocol's **presentNativeScriptApp:** method:
 
 ```
 - (id)presentNativeScriptApp: (UIViewController*) vc {
